@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+
+:root {
+    --accent-color: #c7b0c3;
+}
+
+.exam-ques{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+
+.quiz-container {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    max-width: 650px;
+    padding: 2rem;
+}
+
+.loading-bar {
+    width: 100%;
+    height: 5px;
+    background-color: #eee;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.loading-bar-progress {
+    background-color: var(--accent-color);
+    height: 100%;
+    width: 0;
+    transition: 0.3s ease;
+}
+
+.exam-ques h2 {
+    font-size: 22px;
+    text-align: center;
+}
+
+.exam-ques ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.exam-ques ul li {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.exam-ques ul li input {
+    display: none;
+}
+
+.exam-ques ul li label {
+    cursor: pointer;
+    display: block;
+    color: #666;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 50px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: 0.1s ease;
+}
+
+.exam-ques ul li input:hover+label {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+        rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.exam-ques ul li input:checked+label {
+    outline: 2px solid var(--accent-color);
+    color: var(--accent-color);
+}
+
+ button {
+    color: var(--accent-color);
+    background-color: transparent;
+    font-family: inherit;
+    border: none;
+    display: block;
+    cursor: pointer;
+    margin: auto;
+    font-size: 1.1rem;
+    font-family: inherit;
+    padding: 1rem;
+    transition: 0.1s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+.header {
+    padding-block: 0px;
+    
+}
+
+.header.active {
+    padding-block: 0px;
+}
+
+/** Timer ***/
+.timer{
+    position: fixed;
+    padding: 10px;
+    top: 80px;
+    right: 30px;
+    z-index: 9999;
+}
+
+
+@media (min-width: 300px) {
+    .quiz-container {
+        width: 330px;
+    }
+}
+@media (min-width: 450px) {
+    .quiz-container {
+        width: 510px;
+    }
+}
+@media (min-width: 550px) {
+    .quiz-container {
+        width: 530px;
+    }
+}
+@media (min-width: 768px) {
+    .quiz-container {
+        width: 550px;
+    }
+}
+@media (min-width: 1000px) {
+    .quiz-container {
+        width: 650px;
+    }
+}
