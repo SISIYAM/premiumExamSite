@@ -785,7 +785,7 @@ if(isset($_POST['addCourse'])){
     
     if(in_array($extension, $supported_extension)){
 
-      $sql = mysqli_query($con, "INSERT INTO package (package_id,name,description,price,duration,routine,expiry_date) VALUES ('$package_id','$name','$description','$price','$duration','$routine_path','$expiry_date')");
+      $sql = mysqli_query($con, "INSERT INTO package (package_id,name,description,price,duration,image,expiry_date) VALUES ('$package_id','$name','$description','$price','$duration','$routine_path','$expiry_date')");
       if($sql){
         move_uploaded_file($_FILES['routine']['tmp_name'],$routine_path);
         $_SESSION['message'] = "Success";

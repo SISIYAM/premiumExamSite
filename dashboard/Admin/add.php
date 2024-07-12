@@ -497,10 +497,14 @@
                           <input type="text" id="first-name-vertical" class="form-control" name="courseName"
                             placeholder="Name" required>
                         </div>
-
+                        <div class="form-group">
+                          <label for="first-name-vertical">Course Thumbnail<span>*</span></label>
+                          <input type="file" id="first-name-vertical" class="form-control" name="routine" required>
+                        </div>
                         <div class="form-group">
                           <label for="first-name-vertical">Description<span>*</span></label>
-                          <textarea name="description" class="form-control" id="" cols="30" rows="10"></textarea>
+                          <!-- <textarea name="description" class="form-control" id="" cols="30" rows="10"></textarea> -->
+                          <textarea name="description" id="editor"></textarea>
                         </div>
 
                         <div class="form-group">
@@ -520,11 +524,6 @@
                           <label for="first-name-vertical">Expiry Date<span>*</span></label>
                           <input type="date" id="first-name-vertical" class="form-control" name="expiry_date"
                             placeholder="" required>
-                        </div>
-                        <div class="form-group">
-                          <label for="first-name-vertical">Routine<span></span></label>
-                          <input type="file" id="first-name-vertical" class="form-control" name="routine"
-                            placeholder="">
                         </div>
 
 

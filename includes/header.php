@@ -4,7 +4,11 @@
   <nav class="navbar navbar-expand-xl">
     <div class="container">
       <!-- Logo START -->
-      <a class="navbar-brand" href="index">
+      <a class="navbar-brand" href="<?php if(isset($_SESSION['student_id'])){
+        echo "home";
+      }else{
+        echo "index";
+      } ?>">
         <b class="">SEI INNOVATIONS</b>
       </a>
       <!-- Logo END -->
@@ -19,7 +23,17 @@
 
       <!-- Profile START -->
       <div class="dropdown ms-1 ms-lg-0">
-        <a href="dashboard/"><button class="btn btn-primary">Visit Exam Site</button></a>
+        <?php 
+       if(isset($_SESSION['student_id'])){
+        ?>
+        <a href="dashboard/"> <button class="btn btn-primary">GO Exam Site</button></a>
+        <?php
+       } else{  ?>
+        <a href="login.php?login"> <button class="btn btn-primary">Login </button></a>
+
+        <?php 
+       }
+       ?>
       </div>
       <!-- Profile START -->
     </div>
