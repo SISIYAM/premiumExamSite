@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 session_start();
 session_regenerate_id();
 include './dashboard/Admin/includes/dbcon.php';

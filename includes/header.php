@@ -1,55 +1,29 @@
-<header class="header" data-header>
-  <div class="container">
-
-    <div class="overlay" data-overlay></div>
-
-    <a href="#" class="logo">
-      <p style="font-size:25px; color:hsl(39, 100%, 50%); font-weight:bold;">SEI <sub>Innovations</sub></p>
-    </a>
-
-    <button class="menu-open-btn" data-menu-open-btn>
-      <ion-icon name="menu-outline"></ion-icon>
-    </button>
-
-    <nav class="navbar" data-navbar>
-
-      <button class="menu-close-btn" data-menu-close-btn>
-        <ion-icon name="close-outline"></ion-icon>
-      </button>
-
-      <a href="#" class="logo">
-        <img src="./assets/images/logo.svg" alt="Eduland logo">
+<!-- Header START -->
+<header class="navbar-light navbar-sticky header-static">
+  <!-- Logo Nav START -->
+  <nav class="navbar navbar-expand-xl">
+    <div class="container">
+      <!-- Logo START -->
+      <a class="navbar-brand" href="index">
+        <b class="">SEI INNOVATIONS</b>
       </a>
+      <!-- Logo END -->
 
-      <ul class="navbar-list">
-        <!--
-        <li>
-          <a href="index.php" class="navbar-link">Home</a>
-        </li>
 
-        <li>
-          <a href="#" class="navbar-link">Contact</a>
-        </li>
 
-       
-      
+      <!-- Main navbar START -->
+      <div class="navbar-collapse w-100 collapse" id="navbarCollapse">
 
-            -->
-      </ul>
+      </div>
+      <!-- Main navbar END -->
 
-      <?php 
-       if(isset($_SESSION['student_id'])){
-        ?>
-      <a href="dashboard/index.php"> <button class="btn btn-primary">GO Exam Site</button></a>
-      <?php
-       } else{  ?>
-      <a href="login.php?login"> <button class="btn btn-primary">Login </button></a>
-
-      <?php 
-       }
-       ?>
-
-    </nav>
-
-  </div>
+      <!-- Profile START -->
+      <div class="dropdown ms-1 ms-lg-0">
+        <a href="dashboard/"><button class="btn btn-primary">Visit Exam Site</button></a>
+      </div>
+      <!-- Profile START -->
+    </div>
+  </nav>
+  <!-- Logo Nav END -->
 </header>
+<!-- Header END -->
